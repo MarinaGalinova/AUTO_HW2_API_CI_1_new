@@ -14,15 +14,3 @@ install:
 
 build_script:
   - ./gradlew test --info
-
-  notifications:
-    - provider: Email
-
-        to:
-          - m.kriklivenko@gmail.com
-
-        on_build_success: false
-
-        on_build_failure: true
-
-        on_build_status_changed: true
